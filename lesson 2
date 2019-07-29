@@ -9,7 +9,10 @@ import pandas as pd
 weight1 = 1.0
 weight2 = 1.0
 bias = -1.1
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6ceff89f21ea7acf1b8e6e67035b6b0abaa136a
 
 # DON'T CHANGE ANYTHING BELOW
 # Inputs and outputs
@@ -32,3 +35,33 @@ if not num_wrong:
 else:
     print('You got {} wrong.  Keep trying!\n'.format(num_wrong))
 print(output_frame.to_string(index=False))
+
+
+#OR Perceptron: weights and bias ?
+
+#two ways to go from an AND perceptron to an OR perceptron.
+        increase the weights
+        decrease the magnitude of the bias
+
+weight1 = 2.0
+weight2 = 2.0
+bias = -2.0
+
+weight1 = 1.0
+weight2 = 1.0
+bias = -1.0
+
+
+3. NOT Perceptron: weights and bias ?
+
+# the NOT operation only cares about one input.
+        The operation returns a '0' if the input is 1.
+        The operation returns a '1' if it's a 0.
+        The other inputs to the perceptron are ignored. If we ignore the first input, then...
+
+weight1 = 0.0
+weight2 = -2.0
+bias = 1.0
+
+
+
